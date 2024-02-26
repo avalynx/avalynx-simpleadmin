@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+:root,
+[data-bs-theme=light] {
+    --avalynx-navbar-height: 120px;
+    --avalynx-sidenav-width: 12rem;
+    --avalynx-breakpoint: 768px;
+    --avalynx-navi-bg: var(--bs-primary);
+}
+
+[data-bs-theme=dark] {
+    --avalynx-navi-bg: var(--bs-primary);
+}

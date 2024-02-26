@@ -1,1 +1,2 @@
-# avalynx-simpleadmin
+# AvalynxSimpleAdmin
+

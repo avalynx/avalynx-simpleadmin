@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.avalynx-sidenav-item {
+    #background-color:green;
+}
+
+.avalynx-sidenav-item .avalynx-sidenav-button {
+    #background-color:pink;
+    display:flex;
+}
+
+.avalynx-sidenav-item .avalynx-sidenav-button span.title {
+    #background-color:#dddddd;
+}
+
+.avalynx-sidenav-line {
+   #background-color:blue;
+}
+
+.avalynx-sidenav-heading {
+   #background-color:red;
+}

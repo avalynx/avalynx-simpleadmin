@@ -1,0 +1,2 @@
+# AvalynxSimpleAdmin Changelog
+

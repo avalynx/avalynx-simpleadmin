@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+#avalynx-app-header {
+    height: var(--avalynx-navbar-height);
+}
+
+#avalynx-app-loader {
+    z-index: 1000;
+}
+
+#avalynx-app-main,
+#avalynx-app-loader {
+    height: calc(100vh - var(--avalynx-navbar-height));
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop,
+#avalynx-app-sidenav.jsbvis_sidenav_mobile {
+    width: var(--avalynx-sidenav-width) !important;
+    min-width: var(--avalynx-sidenav-width) !important;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop {
+    overflow-y: scroll;
+}
+
+#avalynx-app-sidenav-header {
+    width: calc(var(--avalynx-sidenav-width) - 1px) !important;
+    min-width: calc(var(--avalynx-sidenav-width) - 1px) !important;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_mobile .offcanvas-body {
+    overflow-y: scroll;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar,
+#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-track,
+#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-track {
+    background: var(--avalynx-navi-bg);
+    border-radius: 4px;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb,
+#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-thumb {
+    background: var(--avalynx-gray-light);
+    border-radius: 4px;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb:hover,
+#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-thumb:hover {
+    background: var(--avalynx-gray-normal);
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop,
+#avalynx-app-sidenav .offcanvas-body {
+    scrollbar-width: thin;
+}
+
+#avalynx-app-sidenav.jsbvis_sidenav_desktop,
+#avalynx-app-sidenav .offcanvas-body {
+    scrollbar-color: var(--avalynx-gray-light) var(--avalynx-light);
+}
+
+#avalynx-app-loader,
+#avalynx-app-header,
+#avalynx-app-sidenav {
+    background-color: var(--avalynx-navi-bg);
+}
+
+.avalynx-brand {
+    height: var(--avalynx-navbar-height) !important;
+    min-height: var(--avalynx-navbar-height) !important;
+}
+
+#avalynx-app-header .avalynx-brand {
+    width: 76px !important;
+    min-width: 76px !important;
+}
+
+#avalynx-app-header .avalynx-brand > span {
+    display: none;
+}
+
+#avalynx-app-container {
+    padding: 1.5rem;
+    background-color: var(--avalynx-content-bg);
+    overflow-y: scroll;
+}
+
+[data-avalynx-mode=mobile] {
+    #avalynx-app-container {
+        padding: 0.5rem;
+    }
+}
+
+[data-avalynx-mode=desktop] {
+    #avalynx-app-header .avalynx-brand,
+    .avalynx-brand {
+        width: var(--avalynx-sidenav-width) !important;
+        min-width: var(--avalynx-sidenav-width) !important;
+    }
+
+    #avalynx-app-header .avalynx-brand > span {
+        display: flex;
+    }
+
+    #avalynx-app-sidenav.avalynx-moved {
+        display: none;
+    }
+}
+
+ul.avalynx-livesearch:not(.avalynx-livesearch-show) li {
+    display: block !important;
+}
+
+ul.avalynx-livesearch:not(.avalynx-livesearch-show) li:nth-child(1) {
+    display: none !important;
+}
+
+ul.avalynx-livesearch.avalynx-livesearch-results li:nth-child(1) {
+    padding-bottom: 8px;
+}
+
+.avalynx-header-button,
+.avalynx-header-link {
+    border-radius: 0;
+    color: var(--avalynx-header-btn-color);
+    background-color: var(--avalynx-header-btn-bg);
+    text-decoration: none;
+}
+
+.avalynx-header-button.active,
+.avalynx-header-button:hover,
+.avalynx-header-button:focus,
+.avalynx-header-link.active,
+.avalynx-header-link:hover,
+.avalynx-header-link:focus {
+    color: var(--avalynx-header-active-color) !important;
+    background-color: var(--avalynx-header-active-bg) !important;
+}
+
+[data-bs-theme=light] {
+
+    .avalynx-darkmode-flex,
+    .avalynx-darkmode-block,
+    .avalynx-darkmode-inline {
+        display:none;
+    }
+
+    .avalynx-lightmode-flex {
+        display:flex;
+    }
+
+    .avalynx-lightmode-block {
+        display:block;
+    }
+
+    .avalynx-lightmode-inline {
+        display:inline;
+    }
+
+}
+
+[data-bs-theme=dark] {
+    .avalynx-darkmode-flex {
+        display:flex;
+    }
+
+    .avalynx-darkmode-block {
+        display:block;
+    }
+
+    .avalynx-darkmode-inline {
+        display:inline;
+    }
+
+    .avalynx-lightmode-flex,
+    .avalynx-lightmode-block,
+    .avalynx-lightmode-inline {
+        display:none;
+    }
+}
