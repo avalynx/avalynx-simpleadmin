@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	const SidenavHeader = document.getElementById("avalynx-app-sidenav-header");
 	const SidenavBody = document.getElementById("avalynx-app-sidenav-body");
 	const Sidenavoffcanvas = new bootstrap.Offcanvas(Sidenav);
-    let avalynx_style = getComputedStyle(document.documentElement);
-    let avalynx_sidenav_width_string = avalynx_style.getPropertyValue('--avalynx-breakpoint').trim();
-    const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
-    const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
-    const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
-    if (avalynx_sidenav_width_string.endsWith('px')) {
-        avalynx_sidenav_width_string = avalynx_sidenav_width_string.slice(0, -2);
-    }
-    const avalynx_breakpoint = parseInt(avalynx_sidenav_width_string, 10);
+	let avalynx_style = getComputedStyle(document.documentElement);
+	let avalynx_sidenav_width_string = avalynx_style.getPropertyValue('--avalynx-breakpoint').trim();
+	const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
+	if (avalynx_sidenav_width_string.endsWith('px')) {
+		avalynx_sidenav_width_string = avalynx_sidenav_width_string.slice(0, -2);
+	}
+	const avalynx_breakpoint = parseInt(avalynx_sidenav_width_string, 10);
 
 	avalynx_setSideNavicon = function () {
 		document.documentElement.setAttribute("data-avalynx-mode", "desktop");
@@ -129,21 +129,21 @@ document.addEventListener('DOMContentLoaded', function () {
 			var searchTerm = this.value.toLowerCase();
 			var dropdownMenu = this.closest('.avalynx-livesearch');
 			var items = dropdownMenu.querySelectorAll('.dropdown-item');
-            var count = 0;
+			var count = 0;
 			items.forEach(function(item) {
 				var itemText = item.textContent.toLowerCase();
 				if (itemText.indexOf(searchTerm) !== -1) {
-                    count++;
+					count++;
 					item.parentElement.classList.remove('d-none');
 				} else {
 					item.parentElement.classList.add('d-none');
 				}
 			});
-            if (count>0) {
-                dropdownMenu.classList.add('avalynx-livesearch-results');
-            } else {
-                dropdownMenu.classList.remove('avalynx-livesearch-results');
-            }
+			if (count>0) {
+				dropdownMenu.classList.add('avalynx-livesearch-results');
+			} else {
+				dropdownMenu.classList.remove('avalynx-livesearch-results');
+			}
 		});
 	});
 
