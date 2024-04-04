@@ -152,8 +152,11 @@
 
 		<script>
 
+
 			class AvalynxRef {
-				constructor(selector) {
+				constructor(selector, options = {}) {
+					this.isHtml = options.isHtml || false;
+
 					if (selector.startsWith('#')) {
 						this.elements = [document.querySelector(selector)];
 					} else {
@@ -185,21 +188,25 @@
 				updateElements() {
 					this.elements.forEach(element => {
 						if (element) {
-							element.textContent = this.value;
+							if (this.isHtml) {
+								element.innerHTML = this.value;
+							} else {
+								element.textContent = this.value;
+							}
 						}
 					});
 				}
 			}
 
 			class R extends AvalynxRef {
-				constructor(selector) {
-					super(selector);
+				constructor(selector, options = {}) {
+					super(selector, options);
 				}
 			}
 
 			// Verwendung:
-			const foo = new R('#testref');
-			foo.value = 4;
+			const foo = new R('#testref', {isHtml: true});
+			foo.value = '<strong>HTML Content</strong>';
 
 			const bar = new R('.testref');
 			bar.value = 5;
