@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const loaderWrapper = document.getElementById('avalynx-app-loader');
-	const Sidenav = document.getElementById("avalynx-app-sidenav");
-	const SidenavHeader = document.getElementById("avalynx-app-sidenav-header");
-	const SidenavBody = document.getElementById("avalynx-app-sidenav-body");
+	const loaderWrapper = document.getElementById('avalynx-simpleadmin-loader');
+	const Sidenav = document.getElementById("avalynx-simpleadmin-sidenav");
+	const SidenavHeader = document.getElementById("avalynx-simpleadmin-sidenav-header");
+	const SidenavBody = document.getElementById("avalynx-simpleadmin-sidenav-body");
 	const Sidenavoffcanvas = new bootstrap.Offcanvas(Sidenav);
 	let avalynx_style = getComputedStyle(document.documentElement);
 	let avalynx_sidenav_width_string = avalynx_style.getPropertyValue('--avalynx-breakpoint').trim();
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		SidenavHeader.classList.add("d-none");
 		SidenavBody.classList.remove("offcanvas-body");
 
-		let backdrop = document.querySelector('#avalynx-app-main > .offcanvas-backdrop');
+		let backdrop = document.querySelector('#avalynx-simpleadmin-main > .offcanvas-backdrop');
 		if (backdrop) {
 			Sidenavoffcanvas.toggle();
 		}

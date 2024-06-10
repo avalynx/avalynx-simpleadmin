@@ -1,73 +1,73 @@
 @charset "UTF-8";
 
-#avalynx-app-header {
+#avalynx-simpleadmin-header {
     height: var(--avalynx-navbar-height);
 }
 
-#avalynx-app-loader {
+#avalynx-simpleadmin-loader {
     z-index: 1000;
 }
 
-#avalynx-app-main,
-#avalynx-app-loader {
+#avalynx-simpleadmin-main,
+#avalynx-simpleadmin-loader {
     height: calc(100vh - var(--avalynx-navbar-height));
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop,
-#avalynx-app-sidenav.jsbvis_sidenav_mobile {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_mobile {
     width: var(--avalynx-sidenav-width) !important;
     min-width: var(--avalynx-sidenav-width) !important;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop {
     overflow-y: scroll;
 }
 
-#avalynx-app-sidenav-header {
+#avalynx-simpleadmin-sidenav-header {
     width: calc(var(--avalynx-sidenav-width) - 1px) !important;
     min-width: calc(var(--avalynx-sidenav-width) - 1px) !important;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_mobile .offcanvas-body {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_mobile .offcanvas-body {
     overflow-y: scroll;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar,
-#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar,
+#avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-track,
-#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-track {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-track,
+#avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-track {
     background: var(--avalynx-navi-bg);
     border-radius: 4px;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb,
-#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-thumb {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb,
+#avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-thumb {
     background: var(--avalynx-gray-light);
     border-radius: 4px;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb:hover,
-#avalynx-app-sidenav .offcanvas-body::-webkit-scrollbar-thumb:hover {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb:hover,
+#avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-thumb:hover {
     background: var(--avalynx-gray-normal);
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop,
-#avalynx-app-sidenav .offcanvas-body {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
+#avalynx-simpleadmin-sidenav .offcanvas-body {
     scrollbar-width: thin;
 }
 
-#avalynx-app-sidenav.jsbvis_sidenav_desktop,
-#avalynx-app-sidenav .offcanvas-body {
+#avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
+#avalynx-simpleadmin-sidenav .offcanvas-body {
     scrollbar-color: var(--avalynx-gray-light) var(--avalynx-light);
 }
 
-#avalynx-app-loader,
-#avalynx-app-header,
-#avalynx-app-sidenav {
+#avalynx-simpleadmin-loader,
+#avalynx-simpleadmin-header,
+#avalynx-simpleadmin-sidenav {
     background-color: var(--avalynx-navi-bg);
 }
 
@@ -76,39 +76,39 @@
     min-height: var(--avalynx-navbar-height) !important;
 }
 
-#avalynx-app-header .avalynx-brand {
+#avalynx-simpleadmin-header .avalynx-brand {
     width: 76px !important;
     min-width: 76px !important;
 }
 
-#avalynx-app-header .avalynx-brand > span {
+#avalynx-simpleadmin-header .avalynx-brand > span {
     display: none;
 }
 
-#avalynx-app-container {
+#avalynx-simpleadmin-container {
     padding: 1.5rem;
     background-color: var(--avalynx-content-bg);
     overflow-y: scroll;
 }
 
 [data-avalynx-mode=mobile] {
-    #avalynx-app-container {
+    #avalynx-simpleadmin-container {
         padding: 0.5rem;
     }
 }
 
 [data-avalynx-mode=desktop] {
-    #avalynx-app-header .avalynx-brand,
+    #avalynx-simpleadmin-header .avalynx-brand,
     .avalynx-brand {
         width: var(--avalynx-sidenav-width) !important;
         min-width: var(--avalynx-sidenav-width) !important;
     }
 
-    #avalynx-app-header .avalynx-brand > span {
+    #avalynx-simpleadmin-header .avalynx-brand > span {
         display: flex;
     }
 
-    #avalynx-app-sidenav.avalynx-moved {
+    #avalynx-simpleadmin-sidenav.avalynx-moved {
         display: none;
     }
 }

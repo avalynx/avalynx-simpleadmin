@@ -1,4 +1,37 @@
 {
   "name": "avalynx-simpleadmin",
-  "title": "AvalynxSimpleAdmin"
+  "title": "AvalynxSimpleAdmin",
+  "description": "Avalynx Simple Admin is a simple admin interface based on Bootstrap >=5.3",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "avalynx",
+    "bootstrap",
+    "bootstrap5"
+  ],
+  "ignore": [
+    "package.json"
+  ],
+  "author": {
+    "name": "Juergen Schwind an the Avalynx-SimpleAdmin authors",
+    "url": "https://github.com/avalynx/avalynx-simpleadmin/graphs/contributors"
+  },
+  "homepage": "https://github.com/avalynx/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avalynx/avalynx-simpleadmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avalynx/avalynx-simpleadmin/issues"
+  },
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "bootstrap": ">=5.3"
+  },
+  "devDependencies": {
+    "shelljs": "^0",
+    "shx": "^0"
+  }
 }

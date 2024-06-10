@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.avalynx-sidenav-sub1 {
+    --avalynx-sidenav-sub1-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --avalynx-sidenav-sub1-border-color: var(--bs-border-color);
+    --avalynx-sidenav-sub1-btn-color: var(--bs-body-color);
+    --avalynx-sidenav-sub1-btn-icon: "\f282";
+    --avalynx-sidenav-sub1-btn-icon-font: "bootstrap-icons";
+    --avalynx-sidenav-sub1-btn-icon-width: 0.75rem;
+    --avalynx-sidenav-sub1-btn-icon-size: 0.7rem;
+    --avalynx-sidenav-sub1-btn-icon-transform: rotate(-180deg);
+    --avalynx-sidenav-sub1-btn-icon-transition: transform 0.2s ease-in-out;
+    --avalynx-sidenav-sub1-active-color: var(--bs-primary-text-emphasis);
+    --avalynx-sidenav-sub1-active-bg: var(--bs-primary-bg-subtle);
+}

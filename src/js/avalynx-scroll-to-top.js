@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	var appContainer = document.getElementById('avalynx-app-container');
+	var appContainer = document.getElementById('avalynx-simpleadmin-container');
 	var scrollToTopButton = document.getElementById('avalynx-scroll-to-top');
 
 	appContainer.addEventListener('scroll', function() {
