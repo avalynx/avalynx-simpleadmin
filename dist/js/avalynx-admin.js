@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	const SidenavBody = document.getElementById("avalynx-simpleadmin-sidenav-body");
 	const Sidenavoffcanvas = new bootstrap.Offcanvas(Sidenav);
 	let avalynx_style = getComputedStyle(document.documentElement);
-	let avalynx_sidenav_width_string = avalynx_style.getPropertyValue('--avalynx-breakpoint').trim();
-	const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
-	const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
-	const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
+	let avalynx_sidenav_width_string = avalynx_style.getPropertyValue('--avalynx-simpleadmin-breakpoint').trim();
+	const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
 	if (avalynx_sidenav_width_string.endsWith('px')) {
 		avalynx_sidenav_width_string = avalynx_sidenav_width_string.slice(0, -2);
 	}

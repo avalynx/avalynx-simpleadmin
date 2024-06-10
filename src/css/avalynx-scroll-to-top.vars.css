@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 #avalynx-scroll-to-top {
-    --avalynx-scroll-to-top-right: 1.5rem;
-    --avalynx-scroll-to-top-bottom: 1.5rem;
-    --avalynx-scroll-to-top-width: 2.75rem;
-    --avalynx-scroll-to-top-height: 2.75rem;
-    --avalynx-scroll-to-top-color: var(--bs-white);
-    --avalynx-scroll-to-top-bg: rgba(var(--bs-dark-rgb), 0.3);
-    --avalynx-scroll-to-top-active-color: var(--bs-white);
-    --avalynx-scroll-to-top-active-bg: rgba(var(--bs-dark-rgb), 0.5);
-    --avalynx-scroll-to-top-icon: "\f286";
-    --avalynx-scroll-to-top-font: "bootstrap-icons";
-    --avalynx-scroll-to-top-line-height: 2.875rem;
+    --avalynx-simpleadmin-scroll-to-top-right: 1.5rem;
+    --avalynx-simpleadmin-scroll-to-top-bottom: 1.5rem;
+    --avalynx-simpleadmin-scroll-to-top-width: 2.75rem;
+    --avalynx-simpleadmin-scroll-to-top-height: 2.75rem;
+    --avalynx-simpleadmin-scroll-to-top-color: var(--bs-white);
+    --avalynx-simpleadmin-scroll-to-top-bg: rgba(var(--bs-dark-rgb), 0.3);
+    --avalynx-simpleadmin-scroll-to-top-active-color: var(--bs-white);
+    --avalynx-simpleadmin-scroll-to-top-active-bg: rgba(var(--bs-dark-rgb), 0.5);
+    --avalynx-simpleadmin-scroll-to-top-icon: "\f286";
+    --avalynx-simpleadmin-scroll-to-top-font: "bootstrap-icons";
+    --avalynx-simpleadmin-scroll-to-top-line-height: 2.875rem;
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #avalynx-simpleadmin-header {
-    height: var(--avalynx-navbar-height);
+    height: var(--avalynx-simpleadmin-navbar-height);
 }
 
 #avalynx-simpleadmin-loader {
@@ -10,13 +10,13 @@
 
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
-    height: calc(100vh - var(--avalynx-navbar-height));
+    height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_mobile {
-    width: var(--avalynx-sidenav-width) !important;
-    min-width: var(--avalynx-sidenav-width) !important;
+    width: var(--avalynx-simpleadmin-sidenav-width) !important;
+    min-width: var(--avalynx-simpleadmin-sidenav-width) !important;
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop {
@@ -24,8 +24,8 @@
 }
 
 #avalynx-simpleadmin-sidenav-header {
-    width: calc(var(--avalynx-sidenav-width) - 1px) !important;
-    min-width: calc(var(--avalynx-sidenav-width) - 1px) !important;
+    width: calc(var(--avalynx-simpleadmin-sidenav-width) - 1px) !important;
+    min-width: calc(var(--avalynx-simpleadmin-sidenav-width) - 1px) !important;
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_mobile .offcanvas-body {
@@ -40,19 +40,19 @@
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-track,
 #avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-track {
-    background: var(--avalynx-navi-bg);
+    background: var(--avalynx-simpleadmin-navi-bg);
     border-radius: 4px;
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb,
 #avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-thumb {
-    background: var(--avalynx-gray-light);
+    background: var(--avalynx-simpleadmin-gray-light);
     border-radius: 4px;
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop::-webkit-scrollbar-thumb:hover,
 #avalynx-simpleadmin-sidenav .offcanvas-body::-webkit-scrollbar-thumb:hover {
-    background: var(--avalynx-gray-normal);
+    background: var(--avalynx-simpleadmin-gray-normal);
 }
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
@@ -62,18 +62,18 @@
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
 #avalynx-simpleadmin-sidenav .offcanvas-body {
-    scrollbar-color: var(--avalynx-gray-light) var(--avalynx-light);
+    scrollbar-color: var(--avalynx-simpleadmin-gray-light) var(--avalynx-simpleadmin-light);
 }
 
 #avalynx-simpleadmin-loader,
 #avalynx-simpleadmin-header,
 #avalynx-simpleadmin-sidenav {
-    background-color: var(--avalynx-navi-bg);
+    background-color: var(--avalynx-simpleadmin-navi-bg);
 }
 
 .avalynx-brand {
-    height: var(--avalynx-navbar-height) !important;
-    min-height: var(--avalynx-navbar-height) !important;
+    height: var(--avalynx-simpleadmin-navbar-height) !important;
+    min-height: var(--avalynx-simpleadmin-navbar-height) !important;
 }
 
 #avalynx-simpleadmin-header .avalynx-brand {
@@ -87,7 +87,7 @@
 
 #avalynx-simpleadmin-container {
     padding: 1.5rem;
-    background-color: var(--avalynx-content-bg);
+    background-color: var(--avalynx-simpleadmin-content-bg);
     overflow-y: scroll;
 }
 
@@ -100,8 +100,8 @@
 [data-avalynx-mode=desktop] {
     #avalynx-simpleadmin-header .avalynx-brand,
     .avalynx-brand {
-        width: var(--avalynx-sidenav-width) !important;
-        min-width: var(--avalynx-sidenav-width) !important;
+        width: var(--avalynx-simpleadmin-sidenav-width) !important;
+        min-width: var(--avalynx-simpleadmin-sidenav-width) !important;
     }
 
     #avalynx-simpleadmin-header .avalynx-brand > span {
@@ -128,8 +128,8 @@ ul.avalynx-livesearch.avalynx-livesearch-results li:nth-child(1) {
 .avalynx-header-button,
 .avalynx-header-link {
     border-radius: 0;
-    color: var(--avalynx-header-btn-color);
-    background-color: var(--avalynx-header-btn-bg);
+    color: var(--avalynx-simpleadmin-header-btn-color);
+    background-color: var(--avalynx-simpleadmin-header-btn-bg);
     text-decoration: none;
 }
 
@@ -139,8 +139,8 @@ ul.avalynx-livesearch.avalynx-livesearch-results li:nth-child(1) {
 .avalynx-header-link.active,
 .avalynx-header-link:hover,
 .avalynx-header-link:focus {
-    color: var(--avalynx-header-active-color) !important;
-    background-color: var(--avalynx-header-active-bg) !important;
+    color: var(--avalynx-simpleadmin-header-active-color) !important;
+    background-color: var(--avalynx-simpleadmin-header-active-bg) !important;
 }
 
 [data-bs-theme=light] {

@@ -12,10 +12,10 @@ class AvalynxSimpleAdmin {
 
         this.Sidenavoffcanvas = new bootstrap.Offcanvas(this.Sidenav);
         this.avalynx_style = getComputedStyle(document.documentElement);
-        this.avalynx_sidenav_width_string = this.avalynx_style.getPropertyValue('--avalynx-breakpoint').trim();
-        this.avalynx_darkmode_0 = this.avalynx_style.getPropertyValue('--avalynx-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
-        this.avalynx_darkmode_1 = this.avalynx_style.getPropertyValue('--avalynx-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
-        this.avalynx_darkmode_2 = this.avalynx_style.getPropertyValue('--avalynx-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
+        this.avalynx_sidenav_width_string = this.avalynx_style.getPropertyValue('--avalynx-simpleadmin-breakpoint').trim();
+        this.avalynx_darkmode_0 = this.avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
+        this.avalynx_darkmode_1 = this.avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
+        this.avalynx_darkmode_2 = this.avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
         if (this.avalynx_sidenav_width_string.endsWith('px')) {
             this.avalynx_sidenav_width_string = this.avalynx_sidenav_width_string.slice(0, -2);
         }
@@ -28,6 +28,7 @@ class AvalynxSimpleAdmin {
         this.setupSidenav();
         this.setupDarkmode();
         this.setupLiveSearch();
+        this.setupEventListeners();
         if (this.loaderWrapper) {
             this.loaderWrapper.style.display = 'none';
         }
@@ -164,6 +165,16 @@ class AvalynxSimpleAdmin {
                     dropdownMenu.classList.remove('avalynx-livesearch-results');
                 }
             });
+        });
+    }
+
+    setupEventListeners() {
+        document.querySelectorAll('.avalynx-toggler-sidenav').forEach((button) => {
+            button.addEventListener('click', () => this.toggleSidenav());
+        });
+
+        document.querySelectorAll('.avalynx-toggler-darkmode').forEach((button) => {
+            button.addEventListener('click', () => this.toggleDarkmode());
         });
     }
 }

@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 .avalynx-sidenav {
-    --avalynx-sidenav-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-    --avalynx-sidenav-btn-color: var(--bs-body-color);
-    --avalynx-sidenav-btn-bg: var(--bs-body-bg);
-    --avalynx-sidenav-btn-icon: "\f282";
-    --avalynx-sidenav-btn-icon-font: "bootstrap-icons";
-    --avalynx-sidenav-btn-icon-width: 0.75rem;
-    --avalynx-sidenav-btn-icon-size: 0.7rem;
-    --avalynx-sidenav-btn-icon-transform: rotate(-180deg);
-    --avalynx-sidenav-btn-icon-transition: transform 0.2s ease-in-out;
-    --avalynx-sidenav-active-color: var(--bs-primary-text-emphasis);
-    --avalynx-sidenav-active-bg: var(--bs-primary-bg-subtle);
+    --avalynx-simpleadmin-sidenav-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --avalynx-simpleadmin-sidenav-btn-color: var(--bs-body-color);
+    --avalynx-simpleadmin-sidenav-btn-bg: var(--bs-body-bg);
+    --avalynx-simpleadmin-sidenav-btn-icon: "\f282";
+    --avalynx-simpleadmin-sidenav-btn-icon-font: "bootstrap-icons";
+    --avalynx-simpleadmin-sidenav-btn-icon-width: 0.75rem;
+    --avalynx-simpleadmin-sidenav-btn-icon-size: 0.7rem;
+    --avalynx-simpleadmin-sidenav-btn-icon-transform: rotate(-180deg);
+    --avalynx-simpleadmin-sidenav-btn-icon-transition: transform 0.2s ease-in-out;
+    --avalynx-simpleadmin-sidenav-active-color: var(--bs-primary-text-emphasis);
+    --avalynx-simpleadmin-sidenav-active-bg: var(--bs-primary-bg-subtle);
 }

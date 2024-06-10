@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const loaderWrapper = document.getElementById('avalynx-simpleadmin-loader');
 	let avalynx_style = getComputedStyle(document.documentElement);
-	const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
-	const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
-	const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_0 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_1 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
+	const avalynx_darkmode_2 = avalynx_style.getPropertyValue('--avalynx-simpleadmin-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
 
 	avalynx_drawDarkmodeIcon = function (state = 'light') {
 		let elements = document.getElementsByClassName('avalynx-toggler-darkmode');

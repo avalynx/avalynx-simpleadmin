@@ -12,13 +12,13 @@
     align-items: center;
     width: 100%;
     font-size: 1rem;
-    color: var(--avalynx-sidenav-btn-color);
+    color: var(--avalynx-simpleadmin-sidenav-btn-color);
     text-align: left;
-    background-color: var(--avalynx-sidenav-btn-bg);
+    background-color: var(--avalynx-simpleadmin-sidenav-btn-bg);
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
-    transition: var(--avalynx-sidenav-transition);
+    transition: var(--avalynx-simpleadmin-sidenav-transition);
     padding: 0;
     margin: 0;
     padding-top: 10px !important;
@@ -32,13 +32,13 @@
 .avalynx-sidenav-button.active,
 .avalynx-sidenav-button:hover,
 .avalynx-sidenav-button:focus {
-    color: var(--avalynx-sidenav-active-color);
-    background-color: var(--avalynx-sidenav-active-bg);
+    color: var(--avalynx-simpleadmin-sidenav-active-color);
+    background-color: var(--avalynx-simpleadmin-sidenav-active-bg);
 }
 
 .avalynx-sidenav-button:not(.collapsed) {
-    color: var(--avalynx-sidenav-active-color);
-    background-color: var(--avalynx-sidenav-active-bg);
+    color: var(--avalynx-simpleadmin-sidenav-active-color);
+    background-color: var(--avalynx-simpleadmin-sidenav-active-bg);
 }
 
 .avalynx-sidenav-link.active::after,
@@ -47,34 +47,34 @@
 .avalynx-sidenav-button.active::after,
 .avalynx-sidenav-button:hover::after,
 .avalynx-sidenav-button:focus::after {
-    color: var(--avalynx-sidenav-active-color);
+    color: var(--avalynx-simpleadmin-sidenav-active-color);
 }
 
 .avalynx-sidenav-button:not(.collapsed)::after {
-    color: var(--avalynx-sidenav-active-color);
-    transform: var(--avalynx-sidenav-btn-icon-transform);
+    color: var(--avalynx-simpleadmin-sidenav-active-color);
+    transform: var(--avalynx-simpleadmin-sidenav-btn-icon-transform);
 }
 
 .avalynx-sidenav-button::after {
     flex-shrink: 0;
-    width: var(--avalynx-sidenav-btn-icon-width);
-    height: var(--avalynx-sidenav-btn-icon-width);
+    width: var(--avalynx-simpleadmin-sidenav-btn-icon-width);
+    height: var(--avalynx-simpleadmin-sidenav-btn-icon-width);
     margin-left: auto;
-    content: var(--avalynx-sidenav-btn-icon);
-    font-family: var(--avalynx-sidenav-btn-icon-font);
-    color:var(--avalynx-sidenav-btn-color);
-    font-size: var(--avalynx-sidenav-btn-icon-size);
-    transition: var(--avalynx-sidenav-btn-icon-transition);
+    content: var(--avalynx-simpleadmin-sidenav-btn-icon);
+    font-family: var(--avalynx-simpleadmin-sidenav-btn-icon-font);
+    color:var(--avalynx-simpleadmin-sidenav-btn-color);
+    font-size: var(--avalynx-simpleadmin-sidenav-btn-icon-size);
+    transition: var(--avalynx-simpleadmin-sidenav-btn-icon-transition);
 }
 
 .avalynx-sidenav-link::after {
     flex-shrink: 0;
-    width: var(--avalynx-sidenav-btn-icon-width);
-    height: var(--avalynx-sidenav-btn-icon-width);
+    width: var(--avalynx-simpleadmin-sidenav-btn-icon-width);
+    height: var(--avalynx-simpleadmin-sidenav-btn-icon-width);
     margin-left: auto;
     content: "";
     background-repeat: no-repeat;
-    background-size: var(--avalynx-sidenav-btn-icon-width);
+    background-size: var(--avalynx-simpleadmin-sidenav-btn-icon-width);
 }
 
 .avalynx-sidenav-link:hover,

@@ -3,29 +3,29 @@
 #avalynx-scroll-to-top {
     z-index: 1100;
     position: fixed;
-    right: var(--avalynx-scroll-to-top-right);
-    bottom: var(--avalynx-scroll-to-top-bottom);
+    right: var(--avalynx-simpleadmin-scroll-to-top-right);
+    bottom: var(--avalynx-simpleadmin-scroll-to-top-bottom);
     display: none;
-    width: var(--avalynx-scroll-to-top-width);
-    height: var(--avalynx-scroll-to-top-height);
+    width: var(--avalynx-simpleadmin-scroll-to-top-width);
+    height: var(--avalynx-simpleadmin-scroll-to-top-height);
     text-align: center;
-    color: var(--avalynx-scroll-to-top-color);
-    background: var(--avalynx-scroll-to-top-bg);
-    line-height: var(--avalynx-scroll-to-top-line-height);
+    color: var(--avalynx-simpleadmin-scroll-to-top-color);
+    background: var(--avalynx-simpleadmin-scroll-to-top-bg);
+    line-height: var(--avalynx-simpleadmin-scroll-to-top-line-height);
 }
 
 #avalynx-scroll-to-top:focus,
 #avalynx-scroll-to-top:hover {
-    color: var(--avalynx-scroll-to-top-active-color);
+    color: var(--avalynx-simpleadmin-scroll-to-top-active-color);
 }
 
 #avalynx-scroll-to-top:focus,
 #avalynx-scroll-to-top:hover {
-    background: var(--avalynx-scroll-to-top-active-bg);
+    background: var(--avalynx-simpleadmin-scroll-to-top-active-bg);
 }
 
 #avalynx-scroll-to-top i {
     font-weight: 800;
-    content: var(--avalynx-scroll-to-top-icon);
-    font-family: var(--avalynx-scroll-to-top-font);
+    content: var(--avalynx-simpleadmin-scroll-to-top-icon);
+    font-family: var(--avalynx-simpleadmin-scroll-to-top-font);
 }
