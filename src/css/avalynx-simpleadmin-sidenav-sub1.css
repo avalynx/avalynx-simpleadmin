@@ -22,8 +22,8 @@
     overflow-anchor: none;
     transition: var(--avalynx-simpleadmin-sidenav-sub1-transition);
     padding: 0;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 10 !important;
+    padding-bottom: 10 !important;
     margin-left:11px;
 }
 
@@ -111,12 +111,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-    padding: 0px 8px 0px 0px;
+    padding: 0 8px 0 0;
 }
 
 .avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link span.title .badge,
 .avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-button span.title .badge {
-    margin: 0px 8px;
+    margin: 0 8px;
 }
 
 .avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link .rounded-pill,

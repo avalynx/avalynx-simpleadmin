@@ -2,7 +2,7 @@
 
 :root,
 [data-bs-theme=light] {
-    --avalynx-simpleadmin-navbar-height: 60px;
+    --avalynx-simpleadmin-navbar-height: 60;
     --avalynx-simpleadmin-sidenav-width: 18rem;
     --avalynx-simpleadmin-darkmode-0: '<i class="fa-fw fa-solid fa-moon"></i>';
     --avalynx-simpleadmin-darkmode-1: '<i class="fa-fw fa-solid fa-sun"></i>';

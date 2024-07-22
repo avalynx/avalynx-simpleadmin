@@ -20,8 +20,8 @@
     overflow-anchor: none;
     transition: var(--avalynx-simpleadmin-sidenav-transition);
     padding: 0;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 10 !important;
+    padding-bottom: 10 !important;
     margin: 4px 0;
 }
 
@@ -114,13 +114,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-    padding: 0px;
+    padding: 0;
     padding-right: 8px;
 }
 
 .avalynx-simpleadmin-sidenav-item .avalynx-simpleadmin-sidenav-link span.title .badge,
 .avalynx-simpleadmin-sidenav-item .avalynx-simpleadmin-sidenav-button span.title .badge {
-    margin: 0px 8px;
+    margin: 0 8px;
 }
 
 .avalynx-simpleadmin-sidenav-item .avalynx-simpleadmin-sidenav-link .rounded-pill,
