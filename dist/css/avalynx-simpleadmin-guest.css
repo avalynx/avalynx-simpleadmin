@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-#avalynx-simpleadmin-body {
-    overflow-y: scroll;
-}
-
 #avalynx-simpleadmin-header {
     height: var(--avalynx-simpleadmin-navbar-height);
 }
@@ -12,9 +8,13 @@
     z-index: 1000;
 }
 
+#avalynx-simpleadmin-main {
+    overflow-y: scroll;
+}
+
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
-
+    height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
 }
 
 #avalynx-simpleadmin-loader,
@@ -48,7 +48,7 @@
     display: flex;
 }
 
-#avalynx-simpleadmin-sidenav.avalynx-moved {
+#avalynx-simpleadmin-sidenav.avalynx-simpleadmin-moved {
     display: none;
 }
 

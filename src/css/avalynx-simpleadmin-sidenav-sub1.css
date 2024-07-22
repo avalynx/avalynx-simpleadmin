@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-.avalynx-sidenav-sub1 {
+.avalynx-simpleadmin-sidenav-sub1 {
     list-style: none;
     padding: 0px 0px;
     margin-left: 15px;
     border-left: 2px solid var(--avalynx-simpleadmin-sidenav-sub1-border-color);
 }
 
-.avalynx-sidenav-sub1-link,
-.avalynx-sidenav-sub1-button {
+.avalynx-simpleadmin-sidenav-sub1-link,
+.avalynx-simpleadmin-sidenav-sub1-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -27,36 +27,36 @@
     margin-left:11px;
 }
 
-.avalynx-sidenav-sub1-link.active,
-.avalynx-sidenav-sub1-link:hover,
-.avalynx-sidenav-sub1-link:focus,
-.avalynx-sidenav-sub1-button.active,
-.avalynx-sidenav-sub1-button:hover,
-.avalynx-sidenav-sub1-button:focus {
+.avalynx-simpleadmin-sidenav-sub1-link.active,
+.avalynx-simpleadmin-sidenav-sub1-link:hover,
+.avalynx-simpleadmin-sidenav-sub1-link:focus,
+.avalynx-simpleadmin-sidenav-sub1-button.active,
+.avalynx-simpleadmin-sidenav-sub1-button:hover,
+.avalynx-simpleadmin-sidenav-sub1-button:focus {
     color: var(--avalynx-simpleadmin-sidenav-sub1-active-color);
     background-color: var(--avalynx-simpleadmin-sidenav-sub1-active-bg);
 }
 
-.avalynx-sidenav-sub1-button:not(.collapsed) {
+.avalynx-simpleadmin-sidenav-sub1-button:not(.collapsed) {
     color: var(--avalynx-simpleadmin-sidenav-sub1-active-color);
     background-color: var(--avalynx-simpleadmin-sidenav-sub1-active-bg);
 }
 
-.avalynx-sidenav-sub1-link.active::after,
-.avalynx-sidenav-sub1-link:hover::after,
-.avalynx-sidenav-sub1-link:focus::after,
-.avalynx-sidenav-sub1-button.active::after,
-.avalynx-sidenav-sub1-button:hover::after,
-.avalynx-sidenav-sub1-button:focus::after {
+.avalynx-simpleadmin-sidenav-sub1-link.active::after,
+.avalynx-simpleadmin-sidenav-sub1-link:hover::after,
+.avalynx-simpleadmin-sidenav-sub1-link:focus::after,
+.avalynx-simpleadmin-sidenav-sub1-button.active::after,
+.avalynx-simpleadmin-sidenav-sub1-button:hover::after,
+.avalynx-simpleadmin-sidenav-sub1-button:focus::after {
     color: var(--avalynx-simpleadmin-sidenav-sub1-active-color);
 }
 
-.avalynx-sidenav-sub1-button:not(.collapsed)::after {
+.avalynx-simpleadmin-sidenav-sub1-button:not(.collapsed)::after {
     background-image: var(--avalynx-simpleadmin-sidenav-sub1-btn-active-icon);
     transform: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-transform);
 }
 
-.avalynx-sidenav-sub1-button::after {
+.avalynx-simpleadmin-sidenav-sub1-button::after {
     flex-shrink: 0;
     width: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-width);
     height: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-width);
@@ -68,7 +68,7 @@
     transition: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-transition);
 }
 
-.avalynx-sidenav-sub1-link::after {
+.avalynx-simpleadmin-sidenav-sub1-link::after {
     flex-shrink: 0;
     width: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-width);
     height: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-width);
@@ -78,34 +78,34 @@
     background-size: var(--avalynx-simpleadmin-sidenav-sub1-btn-icon-width);
 }
 
-.avalynx-sidenav-sub1-link:hover,
-.avalynx-sidenav-sub1-button:hover {
+.avalynx-simpleadmin-sidenav-sub1-link:hover,
+.avalynx-simpleadmin-sidenav-sub1-button:hover {
     z-index: 2;
 }
 
-.avalynx-sidenav-sub1-link:focus,
-.avalynx-sidenav-sub1-button:focus {
+.avalynx-simpleadmin-sidenav-sub1-link:focus,
+.avalynx-simpleadmin-sidenav-sub1-button:focus {
     z-index: 3;
 }
 
-.avalynx-sidenav-sub1-link,
-.avalynx-sidenav-sub1-header {
+.avalynx-simpleadmin-sidenav-sub1-link,
+.avalynx-simpleadmin-sidenav-sub1-header {
     margin-bottom: 0;
 }
 
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-link {
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link {
     font-weight: normal;
     text-decoration: none;
 }
 
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-link,
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-button {
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link,
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-button {
     padding: 8px;
     display: flex;
 }
 
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-link span.title,
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-button span.title {
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link span.title,
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-button span.title {
     flex-grow: 1 !important;
     white-space: nowrap;
     overflow: hidden;
@@ -114,13 +114,13 @@
     padding: 0px 8px 0px 0px;
 }
 
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-link span.title .badge,
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-button span.title .badge {
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link span.title .badge,
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-button span.title .badge {
     margin: 0px 8px;
 }
 
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-link .rounded-pill,
-.avalynx-sidenav-sub1-item .avalynx-sidenav-sub1-button .rounded-pill {
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link .rounded-pill,
+.avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-button .rounded-pill {
     float: right;
     margin-right: 8px;
 }

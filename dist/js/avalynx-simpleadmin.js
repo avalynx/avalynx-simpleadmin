@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (window.innerWidth < avalynx_breakpoint) {
 			Sidenavoffcanvas.toggle();
 		} else {
-			Sidenav.classList.toggle("avalynx-moved");
+			Sidenav.classList.toggle("avalynx-simpleadmin-moved");
 		}
 	}
 
