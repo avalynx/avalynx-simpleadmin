@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#avalynx-simpleadmin-body {
+    overflow-y: scroll;
+}
+
 #avalynx-simpleadmin-header {
     height: var(--avalynx-simpleadmin-navbar-height);
 }

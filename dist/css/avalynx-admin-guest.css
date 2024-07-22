@@ -8,6 +8,10 @@
     z-index: 1000;
 }
 
+#avalynx-simpleadmin-main {
+    overflow-y: scroll;
+}
+
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
     height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));

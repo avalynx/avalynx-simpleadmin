@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#avalynx-simpleadmin-body {
+    overflow-y: scroll;
+}
+
 #avalynx-simpleadmin-header {
     height: var(--avalynx-simpleadmin-navbar-height);
 }
@@ -10,7 +14,7 @@
 
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
-    height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
+
 }
 
 #avalynx-simpleadmin-loader,
