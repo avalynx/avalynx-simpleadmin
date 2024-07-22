@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (avalynxSimpleAdminSidenavWidthString.endsWith('px')) {
 		avalynxSimpleAdminSidenavWidthString = avalynxSimpleAdminSidenavWidthString.slice(0, -2);
 	}
-	const avalynx_breakpoint = parseInt(avalynxSimpleAdminSidenavWidthString, 10);
+	const avalynxSimpleAdmin = parseInt(avalynxSimpleAdminSidenavWidthString, 10);
 
 	avalynxSimpleAdminSetSidenavIcon = function () {
-		document.documentElement.setAttribute("data-avalynx-mode", "desktop");
+		document.documentElement.setAttribute("data-avalynx-simpleadmin-mode", "desktop");
 		avalynxSimpleAdminSidenav.classList.remove("offcanvas");
 		avalynxSimpleAdminSidenav.classList.remove("offcanvas-start");
 		avalynxSimpleAdminSidenav.classList.remove("jsbvis_sidenav_mobile");
@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		avalynxSimpleAdminSidenavHeader.classList.add("d-none");
 		avalynxSimpleAdminSidenavBody.classList.remove("offcanvas-body");
 
-		let backdrop = document.querySelector('#avalynx-simpleadmin-main > .offcanvas-backdrop');
-		if (backdrop) {
+		let avalynxSimpleAdminBacktrop = document.querySelector('#avalynx-simpleadmin-main > .offcanvas-backdrop');
+		if (avalynxSimpleAdminBacktrop) {
 			avalynxSimpleAdminSidenavOffcanvas.toggle();
 		}
 	}
 
 	avalynxSimpleAdminSetMobileSideavIcon = function () {
-		document.documentElement.setAttribute("data-avalynx-mode", "mobile");
+		document.documentElement.setAttribute("data-avalynx-simpleadmin-mode", "mobile");
 		avalynxSimpleAdminSidenav.classList.add("offcanvas");
 		avalynxSimpleAdminSidenav.classList.add("offcanvas-start");
 		avalynxSimpleAdminSidenav.classList.add("jsbvis_sidenav_mobile");
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 	avalynxSimpleAdminToggleSidenav = function () {
-		if (window.innerWidth < avalynx_breakpoint) {
+		if (window.innerWidth < avalynxSimpleAdmin) {
 			avalynxSimpleAdminSidenavOffcanvas.toggle();
 		} else {
 			avalynxSimpleAdminSidenav.classList.toggle("avalynx-simpleadmin-moved");
@@ -81,21 +81,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	avalynxSimpleAdminResizeWindow = function (init = false) {
-		let sate_current = document.documentElement.getAttribute("data-avalynx-mode");
+		let sate_current = document.documentElement.getAttribute("data-avalynx-simpleadmin-mode");
 		let state_changed = false;
 
-		if (window.innerWidth < avalynx_breakpoint) {
-			if (sate_current != "mobile") {
+		if (window.innerWidth < avalynxSimpleAdmin) {
+			if (sate_current !== "mobile") {
 				state_changed = true;
 			}
 		} else {
-			if (sate_current != "desktop") {
+			if (sate_current !== "desktop") {
 				state_changed = true;
 			}
 		}
 
 		if (state_changed === true) {
-			if (innerWidth < avalynx_breakpoint) {
+			if (innerWidth < avalynxSimpleAdmin) {
 				avalynxSimpleAdminSetMobileSideavIcon();
 			} else {
 				avalynxSimpleAdminSetSidenavIcon();
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	if (window.innerWidth < avalynx_breakpoint) {
+	if (window.innerWidth < avalynxSimpleAdmin) {
 		avalynxSimpleAdminSetMobileSideavIcon();
 	} else {
 		avalynxSimpleAdminSetSidenavIcon();

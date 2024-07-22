@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-.avalynx-sidenav-sub1 {
+.avalynx-simpleadmin-sidenav-sub1 {
     --avalynx-simpleadmin-sidenav-sub1-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --avalynx-simpleadmin-sidenav-sub1-border-color: var(--bs-border-color);
     --avalynx-simpleadmin-sidenav-sub1-btn-color: var(--bs-body-color);
-    --avalynx-simpleadmin-sidenav-sub1-btn-icon: "\f282";
-    --avalynx-simpleadmin-sidenav-sub1-btn-icon-font: "bootstrap-icons";
+    --avalynx-simpleadmin-sidenav-sub1-btn-icon: "\f078";
+    --avalynx-simpleadmin-sidenav-sub1-btn-icon-font: "FontAwesome";
     --avalynx-simpleadmin-sidenav-sub1-btn-icon-width: 0.75rem;
     --avalynx-simpleadmin-sidenav-sub1-btn-icon-size: 0.7rem;
     --avalynx-simpleadmin-sidenav-sub1-btn-icon-transform: rotate(-180deg);

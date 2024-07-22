@@ -85,10 +85,6 @@
     min-width: 76px !important;
 }
 
-#avalynx-simpleadmin-header .avalynx-simpleadmin-brand > span {
-    /*display: none;*/
-}
-
 #avalynx-simpleadmin-container {
     padding: 1.5rem;
     background-color: var(--avalynx-simpleadmin-content-bg);
@@ -98,6 +94,10 @@
 [data-avalynx-simpleadmin-mode=mobile] {
     #avalynx-simpleadmin-container {
         padding: 0.5rem;
+    }
+
+    #avalynx-simpleadmin-header .avalynx-simpleadmin-brand > span {
+        display: none;
     }
 }
 

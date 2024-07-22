@@ -2,7 +2,7 @@
 
 .avalynx-simpleadmin-sidenav-sub1 {
     list-style: none;
-    padding: 0px 0px;
+    padding: 0 0;
     margin-left: 15px;
     border-left: 2px solid var(--avalynx-simpleadmin-sidenav-sub1-border-color);
 }
