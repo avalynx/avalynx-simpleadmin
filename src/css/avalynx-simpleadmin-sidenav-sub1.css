@@ -22,9 +22,9 @@
     overflow-anchor: none;
     transition: var(--avalynx-simpleadmin-sidenav-sub1-transition);
     padding: 0;
-    padding-top: 10 !important;
-    padding-bottom: 10 !important;
-    margin-left:11px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-left: 11px;
 }
 
 .avalynx-simpleadmin-sidenav-sub1-link.active,
