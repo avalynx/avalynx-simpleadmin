@@ -24,7 +24,13 @@
     padding: 0;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    margin-bottom: 4px !important;
     margin-left: 11px;
+}
+
+.avalynx-simpleadmin-sidenav-sub1>li:last-child .avalynx-simpleadmin-sidenav-sub1-link,
+.avalynx-simpleadmin-sidenav-sub1>li:last-child .avalynx-simpleadmin-sidenav-sub1-button {
+    margin-bottom: 0 !important;
 }
 
 .avalynx-simpleadmin-sidenav-sub1-link.active,
@@ -96,6 +102,7 @@
 .avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link {
     font-weight: normal;
     text-decoration: none;
+    margin-top: 0 !important;
 }
 
 .avalynx-simpleadmin-sidenav-sub1-item .avalynx-simpleadmin-sidenav-sub1-link,
