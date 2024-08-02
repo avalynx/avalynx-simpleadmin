@@ -2,7 +2,7 @@
   "name": "avalynx-simpleadmin",
   "title": "AvalynxSimpleAdmin",
   "description": "Avalynx Simple Admin is a simple admin interface based on Bootstrap >=5.3",
-  "version": "0.0.1",
+  "version": "0.0.1rc1",
   "license": "MIT",
   "keywords": [
     "avalynx",

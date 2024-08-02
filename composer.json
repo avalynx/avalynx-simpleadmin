@@ -1,0 +1,24 @@
+{
+    "name": "avalynx/avalynx-simpleadmin",
+    "description": "AvalynxSimpleAdmin is a simple admin interface based on Bootstrap >=5.3",
+    "keywords": [
+        "avalynx",
+        "bootstrap",
+        "bootstrap5",
+        "admin"
+    ],
+    "homepage": "https://github.com/avalynx/avalynx-simpleadmin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juergen Schwind an the AvalynxSimpleAdmin authors",
+            "homepage": "https://github.com/avalynx/avalynx-simpleadmin/graphs/contributors"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/avalynx/avalynx-simpleadmin.git"
+        }
+    ]
+}
