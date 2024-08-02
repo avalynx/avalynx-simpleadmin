@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    let avalynxSimpleAdminStyle = getComputedStyle(document.documentElement);
+
 	const avalynxSimpleAdminLoader = document.getElementById('avalynx-simpleadmin-loader');
-	let avalynxSimpleAdminStyle = getComputedStyle(document.documentElement);
 	const avalynxSimpleAdminDarkmode0 = avalynxSimpleAdminStyle.getPropertyValue('--avalynx-simpleadmin-darkmode-0').trim().slice(1, -1).replace(/\\\"/g, '"');
 	const avalynxSimpleAdminDarkmode1 = avalynxSimpleAdminStyle.getPropertyValue('--avalynx-simpleadmin-darkmode-1').trim().slice(1, -1).replace(/\\\"/g, '"');
 	const avalynxSimpleAdminDarkmode2 = avalynxSimpleAdminStyle.getPropertyValue('--avalynx-simpleadmin-darkmode-2').trim().slice(1, -1).replace(/\\\"/g, '"');
@@ -8,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	avalynxSimpleAdminDrawDarkmodeIcon = function (state = 'light') {
 		let elements = document.getElementsByClassName('avalynx-simpleadmin-toggler-darkmode');
 		for (let i = 0; i < elements.length; i++) {
-            alert(state);
 			if (state === "light") {
 				elements[i].innerHTML = avalynxSimpleAdminDarkmode0;
 			} else if (state === "dark") {
@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (document.documentElement.getAttribute("data-bs-theme") === "light") {
 			document.documentElement.setAttribute("data-bs-theme", "dark");
 			avalynxSimpleAdminDrawDarkmodeIcon('light');
-			if (typeof avalynx_darkmode_save === 'function') {
-				avalynx_darkmode_save('dark');
+			if (typeof avalynxSimpleAdminDarkmodeSave === 'function') {
+                avalynxSimpleAdminDarkmodeSave('dark');
 			}
 		} else {
 			document.documentElement.setAttribute("data-bs-theme", "light");
 			avalynxSimpleAdminDrawDarkmodeIcon('dark');
-			if (typeof avalynx_darkmode_save === 'function') {
-				avalynx_darkmode_save('light');
+			if (typeof avalynxSimpleAdminDarkmodeSave === 'function') {
+                avalynxSimpleAdminDarkmodeSave('light');
 			}
 		}
 	}

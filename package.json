@@ -24,14 +24,7 @@
   "bugs": {
     "url": "https://github.com/avalynx/avalynx-simpleadmin/issues"
   },
-  "scripts": {
-    "build": "node build.js"
-  },
   "dependencies": {
     "bootstrap": ">=5.3"
-  },
-  "devDependencies": {
-    "shelljs": "^0",
-    "shx": "^0"
   }
 }

@@ -1,2 +1,3 @@
-# AvalynxSimpleAdmin Changelog
+
+AvalynxSimpleAdmin Changelog
 

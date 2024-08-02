@@ -75,35 +75,35 @@
     background-color: var(--avalynx-simpleadmin-navi-bg);
 }
 
-.avalynx-brand {
+.avalynx-simpleadmin-brand {
     height: var(--avalynx-simpleadmin-navbar-height) !important;
     min-height: var(--avalynx-simpleadmin-navbar-height) !important;
 }
 
-#avalynx-simpleadmin-header .avalynx-brand {
+#avalynx-simpleadmin-header .avalynx-simpleadmin-brand {
     width: 76px !important;
     min-width: 76px !important;
-}
-
-#avalynx-simpleadmin-header .avalynx-brand > span {
-    display: none;
 }
 
 #avalynx-simpleadmin-container {
     padding: 1.5rem;
     background-color: var(--avalynx-simpleadmin-content-bg);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
-[data-avalynx-mode=mobile] {
+[data-avalynx-simpleadmin-mode=mobile] {
     #avalynx-simpleadmin-container {
         padding: 0.5rem;
     }
+
+    #avalynx-simpleadmin-header .avalynx-simpleadmin-brand > span {
+        display: none;
+    }
 }
 
-[data-avalynx-mode=desktop] {
-    #avalynx-simpleadmin-header .avalynx-brand,
-    .avalynx-brand {
+[data-avalynx-simpleadmin-mode=desktop] {
+    #avalynx-simpleadmin-header .avalynx-simpleadmin-brand,
+    .avalynx-simpleadmin-brand {
         width: var(--avalynx-simpleadmin-sidenav-width) !important;
         min-width: var(--avalynx-simpleadmin-sidenav-width) !important;
     }
@@ -117,74 +117,64 @@
     }
 }
 
-ul.avalynx-livesearch:not(.avalynx-livesearch-show) li {
+ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li {
     display: block !important;
 }
 
-ul.avalynx-livesearch:not(.avalynx-livesearch-show) li:nth-child(1) {
-    display: none !important;
-}
-
-ul.avalynx-livesearch.avalynx-livesearch-results li:nth-child(1) {
-    padding-bottom: 8px;
-}
-
-.avalynx-header-button,
-.avalynx-header-link {
+.avalynx-simpleadmin-header-button,
+.avalynx-simpleadmin-header-link {
     border-radius: 0;
     color: var(--avalynx-simpleadmin-header-btn-color);
     background-color: var(--avalynx-simpleadmin-header-btn-bg);
     text-decoration: none;
 }
 
-.avalynx-header-button.active,
-.avalynx-header-button:hover,
-.avalynx-header-button:focus,
-.avalynx-header-link.active,
-.avalynx-header-link:hover,
-.avalynx-header-link:focus {
+.avalynx-simpleadmin-header-button.active,
+.avalynx-simpleadmin-header-button:hover,
+.avalynx-simpleadmin-header-button:focus,
+.avalynx-simpleadmin-header-link.active,
+.avalynx-simpleadmin-header-link:hover,
+.avalynx-simpleadmin-header-link:focus {
     color: var(--avalynx-simpleadmin-header-active-color) !important;
     background-color: var(--avalynx-simpleadmin-header-active-bg) !important;
 }
 
 [data-bs-theme=light] {
-
-    .avalynx-darkmode-flex,
-    .avalynx-darkmode-block,
-    .avalynx-darkmode-inline {
-        display:none;
+    .avalynx-simpleadmin-darkmode-flex,
+    .avalynx-simpleadmin-darkmode-block,
+    .avalynx-simpleadmin-darkmode-inline {
+        display:none !important;
     }
 
-    .avalynx-lightmode-flex {
-        display:flex;
+    .avalynx-simpleadmin-lightmode-flex {
+        display:flex !important;
     }
 
-    .avalynx-lightmode-block {
-        display:block;
+    .avalynx-simpleadmin-lightmode-block {
+        display:block !important;
     }
 
-    .avalynx-lightmode-inline {
-        display:inline;
+    .avalynx-simpleadmin-lightmode-inline {
+        display:inline !important;
     }
-
 }
 
 [data-bs-theme=dark] {
-    .avalynx-darkmode-flex {
-        display:flex;
+    .avalynx-simpleadmin-darkmode-flex {
+        display:flex !important;
     }
 
-    .avalynx-darkmode-block {
-        display:block;
+    .avalynx-simpleadmin-darkmode-block {
+        display:block !important;
     }
 
-    .avalynx-darkmode-inline {
-        display:inline;
+    .avalynx-simpleadmin-darkmode-inline {
+        display:inline !important;
     }
 
-    .avalynx-lightmode-flex,
-    .avalynx-lightmode-block,
-    .avalynx-lightmode-inline {
-        display:none;
+    .avalynx-simpleadmin-lightmode-flex,
+    .avalynx-simpleadmin-lightmode-block,
+    .avalynx-simpleadmin-lightmode-inline {
+        display:none !important;
     }
 }

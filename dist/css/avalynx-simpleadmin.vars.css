@@ -1,23 +1,25 @@
 @charset "UTF-8";
 
-:root,
-[data-bs-theme=light] {
-    --avalynx-simpleadmin-navbar-height: 260px;
+:root {
+    --avalynx-simpleadmin-navbar-height: 60px;
     --avalynx-simpleadmin-sidenav-width: 18rem;
     --avalynx-simpleadmin-darkmode-0: '<i class="fa-fw fa-solid fa-moon"></i>';
     --avalynx-simpleadmin-darkmode-1: '<i class="fa-fw fa-solid fa-sun"></i>';
     --avalynx-simpleadmin-darkmode-2: '<i class="fa-fw fa-solid fa-circle-half-stroke"></i>';
     --avalynx-simpleadmin-breakpoint: 768px;
+    --avalynx-simpleadmin-header-btn-color: var(--bs-body-color);
+    --avalynx-simpleadmin-header-btn-bg: var(--bs-body-bg);
+    --avalynx-simpleadmin-header-active-color: var(--bs-primary-text-emphasis);
+    --avalynx-simpleadmin-header-active-bg: var(--bs-primary-bg-subtle);
+}
+
+[data-bs-theme=light] {
     --avalynx-simpleadmin-light: var(--bs-light);
     --avalynx-simpleadmin-gray-light: var(--bs-gray-300);
     --avalynx-simpleadmin-gray-normal: var(--bs-gray-400);
     --avalynx-simpleadmin-gray-dark: var(--bs-gray-500);
     --avalynx-simpleadmin-navi-bg: var(--bs-body-bg);
     --avalynx-simpleadmin-content-bg: var(--bs-gray-200);
-    --avalynx-simpleadmin-header-btn-color: var(--bs-body-color);
-    --avalynx-simpleadmin-header-btn-bg: var(--bs-body-bg);
-    --avalynx-simpleadmin-header-active-color: var(--bs-primary-text-emphasis);
-    --avalynx-simpleadmin-header-active-bg: var(--bs-primary-bg-subtle);
 }
 
 [data-bs-theme=dark] {
