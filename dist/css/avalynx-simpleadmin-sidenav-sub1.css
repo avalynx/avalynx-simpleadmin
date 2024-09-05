@@ -28,6 +28,11 @@
     margin-left: 11px;
 }
 
+.avalynx-simpleadmin-sidenav-sub1-link i,
+.avalynx-simpleadmin-sidenav-buttonavalynx-simpleadmin-sidenav-sub1-link i {
+    margin-right: 8px;
+}
+
 .avalynx-simpleadmin-sidenav-sub1>li:last-child .avalynx-simpleadmin-sidenav-sub1-link,
 .avalynx-simpleadmin-sidenav-sub1>li:last-child .avalynx-simpleadmin-sidenav-sub1-button {
     margin-bottom: 0 !important;
