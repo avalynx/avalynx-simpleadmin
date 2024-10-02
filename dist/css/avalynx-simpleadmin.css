@@ -121,6 +121,14 @@ ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li {
     display: block !important;
 }
 
+ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li:nth-child(1) {
+    display: none !important;
+}
+
+ul.avalynx-simpleadmin-livesearch.avalynx-simpleadmin-livesearch-results li:nth-child(1) {
+    padding-bottom: 8px;
+}
+
 .avalynx-simpleadmin-header-button,
 .avalynx-simpleadmin-header-link {
     border-radius: 0;
