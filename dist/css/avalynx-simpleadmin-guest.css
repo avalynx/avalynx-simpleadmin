@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-#avalynx-simpleadmin-body {
-    background-color: var(--avalynx-simpleadmin-content-bg);
+#avalynx-simpleadmin-header {
+    z-index: 1000;
 }
 
 #avalynx-simpleadmin-header {
@@ -9,7 +9,8 @@
 }
 
 #avalynx-simpleadmin-loader {
-    z-index: 1000;
+    margin: -1.5rem !important;
+    z-index: 999;
 }
 
 #avalynx-simpleadmin-main,
@@ -32,7 +33,7 @@
     min-width: 76px !important;
 }
 
-#avalynx-simpleadmin-container {
+#avalynx-simpleadmin-main {
     padding: 1.5rem;
     background-color: var(--avalynx-simpleadmin-content-bg);
     overflow-y: scroll;
