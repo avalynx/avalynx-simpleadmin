@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#avalynx-simpleadmin-body {
+    background-color: var(--avalynx-simpleadmin-content-bg);
+}
+
 #avalynx-simpleadmin-header {
     height: var(--avalynx-simpleadmin-navbar-height);
 }
