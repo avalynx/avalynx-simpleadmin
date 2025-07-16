@@ -6,12 +6,12 @@
     --avalynx-simpleadmin-header-active-color: var(--avalynx-simpleadmin-header-btn-color);
 }
 
-.avalynx-sidenav {
+.avalynx-simpleadmin-sidenav {
     --avalynx-simpleadmin-sidenav-active-bg: var(--bs-gray-200);
     --avalynx-simpleadmin-sidenav-active-color: var(--avalynx-simpleadmin-sidenav-btn-color);
 }
 
-.avalynx-sidenav-sub1 {
+.avalynx-simpleadmin-sidenav-sub1 {
     --avalynx-simpleadmin-sidenav-sub1-active-bg: var(--bs-gray-200);
     --avalynx-simpleadmin-sidenav-sub1-active-color: var(--avalynx-simpleadmin-sidenav-sub1-btn-color);
 }
@@ -21,12 +21,12 @@
     --avalynx-simpleadmin-header-active-color: var(--avalynx-simpleadmin-header-btn-color);
 }
 
-[data-bs-theme=dark] .avalynx-sidenav {
+[data-bs-theme=dark] .avalynx-simpleadmin-sidenav {
     --avalynx-simpleadmin-sidenav-active-bg: var(--bs-gray-800);
     --avalynx-simpleadmin-sidenav-active-color: var(--avalynx-simpleadmin-sidenav-btn-color);
 }
 
-[data-bs-theme=dark] .avalynx-sidenav-sub1 {
+[data-bs-theme=dark] .avalynx-simpleadmin-sidenav-sub1 {
     --avalynx-simpleadmin-sidenav-sub1-active-bg: var(--bs-gray-800);
     --avalynx-simpleadmin-sidenav-sub1-active-color: var(--avalynx-simpleadmin-sidenav-sub1-btn-color);
 }

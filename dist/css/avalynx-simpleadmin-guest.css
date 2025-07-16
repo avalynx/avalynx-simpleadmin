@@ -8,10 +8,6 @@
     z-index: 1000;
 }
 
-#avalynx-simpleadmin-main {
-    overflow-y: scroll;
-}
-
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
     height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
@@ -35,7 +31,7 @@
 #avalynx-simpleadmin-container {
     padding: 1.5rem;
     background-color: var(--avalynx-simpleadmin-content-bg);
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #avalynx-simpleadmin-header .avalynx-simpleadmin-brand,

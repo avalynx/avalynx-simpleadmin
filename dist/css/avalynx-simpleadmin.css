@@ -8,10 +8,6 @@
     z-index: 1000;
 }
 
-#avalynx-simpleadmin-main {
-    overflow-y: scroll;
-}
-
 #avalynx-simpleadmin-main,
 #avalynx-simpleadmin-loader {
     height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
@@ -88,7 +84,7 @@
 #avalynx-simpleadmin-container {
     padding: 1.5rem;
     background-color: var(--avalynx-simpleadmin-content-bg);
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 [data-avalynx-simpleadmin-mode=mobile] {
@@ -119,6 +115,14 @@
 
 ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li {
     display: block !important;
+}
+
+ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li:nth-child(1) {
+    display: none !important;
+}
+
+ul.avalynx-simpleadmin-livesearch.avalynx-simpleadmin-livesearch-results li:nth-child(1) {
+    padding-bottom: 8px;
 }
 
 .avalynx-simpleadmin-header-button,
@@ -177,4 +181,8 @@ ul.avalynx-simpleadmin-livesearch:not(.avalynx-simpleadmin-livesearch-show) li {
     .avalynx-simpleadmin-lightmode-inline {
         display:none !important;
     }
+}
+
+.sf-toolbar {
+    position: absolute;
 }

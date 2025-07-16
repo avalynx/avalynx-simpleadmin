@@ -126,10 +126,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	document.querySelectorAll('.avalynx-livesearch-input').forEach(function(searchInput) {
+	document.querySelectorAll('.avalynx-simpleadmin-livesearch-input').forEach(function(searchInput) {
 		searchInput.addEventListener('keyup', function() {
 			var searchTerm = this.value.toLowerCase();
-			var dropdownMenu = this.closest('.avalynx-livesearch');
+			var dropdownMenu = this.closest('.avalynx-simpleadmin-livesearch');
 			var items = dropdownMenu.querySelectorAll('.dropdown-item');
 			var count = 0;
 			items.forEach(function(item) {
@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			});
 			if (count>0) {
-				dropdownMenu.classList.add('avalynx-livesearch-results');
+				dropdownMenu.classList.add('avalynx-simpleadmin-livesearch-results');
 			} else {
-				dropdownMenu.classList.remove('avalynx-livesearch-results');
+				dropdownMenu.classList.remove('avalynx-simpleadmin-livesearch-results');
 			}
 		});
 	});

@@ -1,0 +1,27 @@
+{
+  "name": "avalynx/avalynx-simpleadmin",
+  "files": [
+    "dist/css/avalynx-simpleadmin.css",
+    "dist/css/avalynx-simpleadmin.vars.css",
+    "dist/css/avalynx-simpleadmin-guest.css",
+    "dist/css/avalynx-simpleadmin-sidenav.css",
+    "dist/css/avalynx-simpleadmin-sidenav.vars.css",
+    "dist/css/avalynx-simpleadmin-sidenav-sub1.css",
+    "dist/css/avalynx-simpleadmin-sidenav-sub1.vars.css",
+    "dist/css/custom/avalynx-simpleadmin-light.css",
+    "dist/js/avalynx-simpleadmin.js",
+    "dist/js/avalynx-simpleadmin-guest.js"
+  ],
+  "files-dev": [
+    "src/css/avalynx-simpleadmin.css",
+    "src/css/avalynx-simpleadmin.vars.css",
+    "src/css/avalynx-simpleadmin-guest.css",
+    "src/css/avalynx-simpleadmin-sidenav.css",
+    "src/css/avalynx-simpleadmin-sidenav.vars.css",
+    "src/css/avalynx-simpleadmin-sidenav-sub1.css",
+    "src/css/avalynx-simpleadmin-sidenav-sub1.vars.css",
+    "src/css/custom/avalynx-simpleadmin-light.css",
+    "src/js/avalynx-simpleadmin.js",
+    "src/js/avalynx-simpleadmin-guest.js"
+  ]
+}
