@@ -3,8 +3,8 @@
 :root {
     --avalynx-simpleadmin-navbar-height: 60px;
     --avalynx-simpleadmin-sidenav-width: 18rem;
-    --avalynx-simpleadmin-darkmode-0: '<i class="fa-fw fa-solid fa-moon"></i>';
-    --avalynx-simpleadmin-darkmode-1: '<i class="fa-fw fa-solid fa-sun"></i>';
+    --avalynx-simpleadmin-darkmode-0: '<i class="fa-fw fa-solid fa-sun"></i>';
+    --avalynx-simpleadmin-darkmode-1: '<i class="fa-fw fa-solid fa-moon"></i>';
     --avalynx-simpleadmin-darkmode-2: '<i class="fa-fw fa-solid fa-circle-half-stroke"></i>';
     --avalynx-simpleadmin-breakpoint: 768px;
     --avalynx-simpleadmin-header-btn-color: var(--bs-body-color);
