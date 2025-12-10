@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>VIS</title>
+    <link rel="stylesheet" href="../assetscomposer/twbs/bootstrap/dist/css/bootstrap.min.css?v=b465f03fb55cf7ddfcc1c28821371fc2"><link rel="stylesheet" href="../assetscomposer/fortawesome/font-awesome/css/all.min.css?v=fb4aa821b4c7134010281f7fe9c0baeb"><link rel="stylesheet" href="../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin.vars.css?v=abe2dc59a800e7e1db4b1146e8f0c3db"><link rel="stylesheet" href="../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin-guest.css?v=143ace6f0bbac6a9db752428143914ce"><link rel="stylesheet" href="../assetscomposer/avalynx/avalynx-alert/dist/css/avalynx-alert.css?v=3a74f5c1cb67e63f74c9fe23de6d4bb1">
+
+
+    <script src="../assetscomposer/avalynx/avalynx-form/dist/js/avalynx-form.js?v=5b3caf135b1181640bda9487b907a451"></script><script src="../assetscomposer/twbs/bootstrap/dist/js/bootstrap.bundle.min.js?v=de2636755a7ee328b2c8bfb274119913"></script><script src="../assetscomposer/avalynx/avalynx-simpleadmin/dist/js/avalynx-simpleadmin-guest.js?v=7bdd68fc218540fdf3b9ca86d7fea577"></script><script src="../assetscomposer/avalynx/avalynx-alert/dist/js/avalynx-alert.js?v=943ee32569f53ff01f7197d69026815e"></script>
+
+</head>
+<body id="avalynx-simpleadmin-body">
+<header id="avalynx-simpleadmin-header" class="sticky-top d-flex border-bottom shadow">
+    <div class="avalynx-simpleadmin-brand d-flex align-items-center justify-content-start" style="padding-left:16px;">
+        <img src="../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo.svg?v=fe290bee133edd7e59c32b991bc4ab7a" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-lightmode-flex" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+        <img src="../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo_dark.svg?v=feb76fe4e41eff271c4bd7075edee0a5" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-darkmode-flex d-none" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+        <span class="ms-3">VIS</span>
+    </div>
+    <div class="flex-grow-1"></div>
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-darkmode avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleDarkmode()" title="Toggle dark mode">
+        <i class="fa-fw fa-solid fa-circle-half-stroke"></i>
+    </button>
+</header>
+<div id="avalynx-simpleadmin-main" class="justify-content-center">
+    <div id="avalynx-simpleadmin-loader" class="position-absolute w-100 border-top">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container-xxl col-12 col-sm-10 col-lg-12 col-xl-10 col-xxl-8 pt-5 p-md-5">
+        <div class="row rounded border m-0 shadow bg-body text-body">
+            <div class="col d-none py-3 d-lg-flex justify-content-center align-items-center">
+                <img src="../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo.svg?v=fe290bee133edd7e59c32b991bc4ab7a" class="img-fluid m-5 avalynx-simpleadmin-main-logo avalynx-simpleadmin-lightmode-flex" style="max-width: 100%; height: auto;" title="VIS" alt="vis-logo">
+                <img src="../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo_dark.svg?v=feb76fe4e41eff271c4bd7075edee0a5" class="img-fluid m-5 avalynx-simpleadmin-main-logo avalynx-simpleadmin-darkmode-flex d-none" style="max-width: 100%; height: auto;" title="VIS" alt="vis-logo">
+            </div>
+            <div class="col">
+                <div class="m-2 m-md-5">
+                    <div class="mt-5 pt-lg-4">
+                        <div class="w-100">
+                            <h3 class="mb-3">Login</h3>
+                            <p class="mb-3">Please login to continue.</p>
+                        </div>
+                    </div>
+
+
+                    <form method="post" id="vis-login-form" action="/vis/login">
+
+                        <div class="form-group mb-4">
+                            <label class="form-label" for="_username">E-Mail:</label>
+                            <input type="text" name="_username" id="_username" class="form-control"/>
+                            <span class="invalid-feedback"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label class="form-label" for="_password">Password:</label>
+                            <input type="password" name="_password" id="_password" class="form-control"/>
+                            <span class="invalid-feedback"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mb-4">Login</button>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" name="_remember_me" id="_remember_me" class="form-check-input" value="1"/>
+                                <label class="form-check-label" for="_remember_me">Remember me</label>
+                                <span class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="_csrf_token" value="csrf-token">
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col text-muted text-center"><small>v3.0.0-alpha</small></div>
+        </div>
+    </div>
+
+    <script>
+        const visForm = new AvalynxForm('vis-login-form');
+    </script>
+</div>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

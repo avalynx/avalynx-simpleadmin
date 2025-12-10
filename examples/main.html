@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIS</title>
+    <link rel="stylesheet" href="../../assetscomposer/twbs/bootstrap/dist/css/bootstrap.min.css?v=b465f03fb55cf7ddfcc1c28821371fc2"><link rel="stylesheet" href="../../assetscomposer/fortawesome/font-awesome/css/all.min.css?v=fb4aa821b4c7134010281f7fe9c0baeb"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin.vars.css?v=abe2dc59a800e7e1db4b1146e8f0c3db"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin.css?v=7f05d51a765f35088adc26812d5f2f2b"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin-sidenav.vars.css?v=efe1ea786cbb64b5d343f3b1124e53a3"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin-sidenav.css?v=c7672baa348da0acb1d6f95b6bddc020"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin-sidenav-sub1.vars.css?v=e68d04cdf814dcba2616c88e6e54f328"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/avalynx-simpleadmin-sidenav-sub1.css?v=c27ba6f2bca3febabde672ba0b954462"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/css/custom/avalynx-simpleadmin-light.css?v=b456bf0277a3b4958b1f9bc2e75e4101"><link rel="stylesheet" href="../../assetscomposer/avalynx/avalynx-alert/dist/css/avalynx-alert.css?v=3a74f5c1cb67e63f74c9fe23de6d4bb1">
+
+
+    <script src="../../assetscomposer/twbs/bootstrap/dist/js/bootstrap.bundle.min.js?v=de2636755a7ee328b2c8bfb274119913"></script><script src="../../assetscomposer/avalynx/avalynx-simpleadmin/dist/js/avalynx-simpleadmin.js?v=5fadc4a9858d78c5ec135a23f2ca0a6a"></script><script src="../../assetscomposer/avalynx/avalynx-alert/dist/js/avalynx-alert.js?v=943ee32569f53ff01f7197d69026815e"></script>
+
+</head>
+<body id="avalynx-simpleadmin-body">
+<header id="avalynx-simpleadmin-header" class="sticky-top d-flex border-bottom shadow">
+    <div class="avalynx-simpleadmin-brand d-flex align-items-center justify-content-start" style="padding-left:16px;">
+        <img src="../../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo.svg?v=fe290bee133edd7e59c32b991bc4ab7a" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-lightmode-flex" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+        <img src="../../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo_dark.svg?v=feb76fe4e41eff271c4bd7075edee0a5" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-darkmode-flex d-none" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+        <span class="ms-3">VIS</span>
+    </div>
+
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-sidenav d-none d-md-flex avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleSidenav();" title="Toggle sidebar" id="toggle_sidebar_start">
+        <i class="fa-solid fa-align-left fa-fw"></i>
+    </button>
+
+
+    <div class="flex-grow-1"></div>
+
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-header-button" data-bs-toggle="dropdown" aria-expanded="false" title="Change tool" id="dropdown_tools_end">
+        <i class="fa-solid fa-diagram-project fa-fw"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 me-1 avalynx-simpleadmin-livesearch" aria-labelledby="dropdown_tools_end">
+        <li>
+            <span class="dropdown-item-text">
+                <input type="text" class="form-control avalynx-simpleadmin-livesearch-input" placeholder="Search...">
+            </span>
+        </li>
+        <li class="d-none">
+            <a class="dropdown-item" href="/vis/test">main.title</a>
+        </li>
+        <li class="d-none">
+            <a class="dropdown-item active" href="/vis/demo">Demo</a>
+        </li>
+    </ul>
+
+
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-darkmode avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleDarkmode();" title="Toggle dark mode" id="toggle_darkmode_end">
+        <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+    </button>
+
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-sidenav d-flex d-md-none avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleSidenav();" title="Toggle sidebar" id="toggle_sidebar_end">
+        <i class="fa-solid fa-align-left fa-fw"></i>
+    </button>
+
+
+</header>
+<div id="avalynx-simpleadmin-main" class="d-flex">
+
+    <div id="avalynx-simpleadmin-loader" class="position-absolute w-100 border-top">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="avalynx-simpleadmin-sidenav" class="shadow">
+
+        <div id="avalynx-simpleadmin-sidenav-header" class="offcanvas-header avalynx-simpleadmin-brand d-flex align-items-center justify-content-start border-bottom p-0 m-0" style="padding-left:16px !important;">
+
+            <img src="../../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo.svg?v=fe290bee133edd7e59c32b991bc4ab7a" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-lightmode-flex" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+            <img src="../../assetscomposer/jbsnewmedia/vis-bundle/assets/img/logo_dark.svg?v=feb76fe4e41eff271c4bd7075edee0a5" class="img-fluid avalynx-simpleadmin-navigation-logo avalynx-simpleadmin-darkmode-flex d-none" style="max-height: 40px; height: auto;" title="VIS" alt="vis-logo">
+            <span class="ms-3">VIS</span>
+
+        </div>
+
+        <div id="avalynx-simpleadmin-sidenav-body" class="p-0">
+
+            <div class="p-2 pe-1">
+
+                <ul class="avalynx-simpleadmin-sidenav" id="avalynx-simpleadmin-sidenav-content">
+
+
+                    <li class="avalynx-simpleadmin-sidenav-heading">Main</li>
+
+
+
+
+
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <a class="avalynx-simpleadmin-sidenav-link" type="button" href="/vis/test/dashboard" >
+                                <i class="fa-fw fa-solid fa-house"></i>                <span class="title">navigation.dashboard</span>
+
+
+                            </a>
+                        </h2>
+                    </li>
+
+
+
+
+
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <button class="avalynx-simpleadmin-sidenav-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#avalynx-simpleadmin-sidenav-vis_test_table" aria-expanded="false" aria-controls="avalynx-simpleadmin-sidenav-vis_test_table">
+                                <i class="fa-fw fa-solid fa-database"></i>                <span class="title">navigation.table</span>
+
+
+                            </button>
+                        </h2>
+                        <div id="avalynx-simpleadmin-sidenav-vis_test_table" class="avalynx-simpleadmin-sidenav-collapse collapse">
+                            <div class="avalynx-simpleadmin-sidenav-body">
+                                <ul class="avalynx-simpleadmin-sidenav-sub1">
+
+
+
+                                    <li class="avalynx-simpleadmin-sidenav-sub1-item">
+                                        <h2 class="avalynx-simpleadmin-sidenav-sub1-header">
+                                            <a class="avalynx-simpleadmin-sidenav-sub1-link" type="button" href="/vis/test/table_datatable" >
+                                                <span class="title">navigation.datatable</span>
+
+                                                <span class="ms-1 badge rounded-pill text-bg-secondary">5</span>
+                                            </a>
+                                        </h2>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <li class="avalynx-simpleadmin-sidenav-heading">Admin</li>
+
+
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <a class="avalynx-simpleadmin-sidenav-link" type="button" href="/vis/demo/user" >
+                                <i class="fa-fw fa-solid fa-house"></i>                <span class="title">User</span>
+
+
+                            </a>
+                        </h2>
+                    </li>
+
+
+
+
+
+
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <a class="avalynx-simpleadmin-sidenav-link active" type="button" href="/vis/demo/dashboard" >
+                                <i class="fa-fw fa-solid fa-house"></i>                <span class="title">Dashboard</span>
+
+
+                            </a>
+                        </h2>
+                    </li>
+
+
+
+
+
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <button class="avalynx-simpleadmin-sidenav-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#avalynx-simpleadmin-sidenav-vis_demo_table" aria-expanded="false" aria-controls="avalynx-simpleadmin-sidenav-vis_demo_table">
+                                <i class="fa-fw fa-solid fa-database"></i>                <span class="title">Table</span>
+
+
+                            </button>
+                        </h2>
+                        <div id="avalynx-simpleadmin-sidenav-vis_demo_table" class="avalynx-simpleadmin-sidenav-collapse collapse">
+                            <div class="avalynx-simpleadmin-sidenav-body">
+                                <ul class="avalynx-simpleadmin-sidenav-sub1">
+
+
+
+                                    <li class="avalynx-simpleadmin-sidenav-sub1-item">
+                                        <h2 class="avalynx-simpleadmin-sidenav-sub1-header">
+                                            <a class="avalynx-simpleadmin-sidenav-sub1-link" type="button" href="/vis/demo/table_datatable" >
+                                                <span class="title">Datatable</span>
+
+                                                <span class="ms-1 badge rounded-pill text-bg-secondary">5</span>
+                                            </a>
+                                        </h2>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="avalynx-simpleadmin-container" class="flex-grow-1">
+
+
+
+        <!-- Content Start -->
+        <div class="card shadow">
+            <div class="card-header">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle text-muted">Card subtitle</h6>
+            </div>
+            <div class="card-body">
+                <p class="card-text">id: <span id="testref"></span></p>
+                <p class="card-text">class1: <span class="testref"></span></p>
+                <p class="card-text">class2: <span class="testref"></span></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
