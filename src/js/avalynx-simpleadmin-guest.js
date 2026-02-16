@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	avalynxSimpleAdminToggleDarkmode = function () {
+		if (typeof avalynxSimpleAdminToggleDarkmodePre === 'function') {
+			avalynxSimpleAdminToggleDarkmodePre();
+		}
 		if (document.documentElement.getAttribute("data-bs-theme") === "light") {
 			document.documentElement.setAttribute("data-bs-theme", "dark");
 			avalynxSimpleAdminDrawDarkmodeIcon('light');
@@ -32,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (typeof avalynxSimpleAdminDarkmodeSave === 'function') {
                 avalynxSimpleAdminDarkmodeSave('light');
 			}
+		}
+		if (typeof avalynxSimpleAdminToggleDarkmodeAfter === 'function') {
+			avalynxSimpleAdminToggleDarkmodeAfter();
 		}
 	}
 
