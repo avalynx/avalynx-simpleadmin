@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIS - Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin.vars.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin-sidenav.vars.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin-sidenav.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin-sidenav-sub1.vars.css">
+    <link rel="stylesheet" href="../dist/css/avalynx-simpleadmin-sidenav-sub1.css">
+    <link rel="stylesheet" href="../dist/css/custom/avalynx-simpleadmin-light.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/avalynx-simpleadmin.js"></script>
+    <script>
+        // Mock function for darkmode save
+        avalynxSimpleAdminDarkmodeSave = function (status) {
+            console.log('Darkmode status saved:', status);
+        }
+    </script>
+</head>
+<body id="avalynx-simpleadmin-body">
+<header id="avalynx-simpleadmin-header" class="sticky-top d-flex border-bottom shadow">
+    <div class="avalynx-simpleadmin-brand d-flex align-items-center justify-content-start" style="padding-left:16px;">
+        <i class="fa-solid fa-diagram-project fa-2x me-2 text-primary"></i>
+        <span class="ms-3 fs-4 fw-bold">VIS</span>
+    </div>
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-sidenav d-none d-md-flex avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleSidenav();" title="Toggle sidebar" id="toggle_sidebar_start">
+        <i class="fa-solid fa-align-left fa-fw"></i>
+    </button>
+
+    <div class="flex-grow-1"></div>
+
+    <button class="btn btn-link justify-content-center align-items-center dropdown-toggle avalynx-simpleadmin-header-button" data-bs-toggle="dropdown" aria-expanded="false" title="Language" id="dropdown_locale">
+        EN
+    </button>
+    <div class="dropdown-menu dropdown-menu-end rounded-0 me-1" aria-labelledby="dropdown_locale">
+        <div class="dropdown-item" style="cursor: pointer;">
+            Deutsch
+        </div>
+        <div class="dropdown-item active" style="cursor: pointer;">
+            English
+        </div>
+    </div>
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-header-button" data-bs-toggle="dropdown" aria-expanded="false" title="Change tool" id="dropdown_tools_end">
+        <i class="fa-solid fa-diagram-project fa-fw"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 me-1 avalynx-simpleadmin-livesearch" aria-labelledby="dropdown_tools_end">
+        <li>
+            <span class="dropdown-item-text">
+                <input type="text" class="form-control avalynx-simpleadmin-livesearch-input" placeholder="Search...">
+            </span>
+        </li>
+        <li>
+            <a class="dropdown-item active" href="#">DDM</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="#">Demo</a>
+        </li>
+    </ul>
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-darkmode avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleDarkmode()" title="Toggle dark mode" id="toggle_darkmode_end">
+        <i class="fa-fw fa-solid fa-sun"></i>
+    </button>
+
+    <button class="btn btn-link justify-content-center align-items-center avalynx-simpleadmin-toggler-sidenav d-flex d-md-none avalynx-simpleadmin-header-button" onclick="avalynxSimpleAdminToggleSidenav();" title="Toggle sidebar" id="toggle_sidebar_end">
+        <i class="fa-solid fa-align-left fa-fw"></i>
+    </button>
+</header>
+
+<div id="avalynx-simpleadmin-main" class="d-flex">
+
+    <div id="avalynx-simpleadmin-loader" class="position-absolute w-100 border-top" style="display: none;">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="avalynx-simpleadmin-sidenav" class="shadow border-end">
+        <div id="avalynx-simpleadmin-sidenav-body" class="p-0">
+            <div class="p-2 pe-1">
+                <ul class="avalynx-simpleadmin-sidenav" id="avalynx-simpleadmin-sidenav-content">
+                    <li class="avalynx-simpleadmin-sidenav-heading">Main Area</li>
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <a class="avalynx-simpleadmin-sidenav-link active" type="button" href="dashboard.html">
+                                <i class="fa-fw fa-solid fa-house"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </h2>
+                    </li>
+                    <li class="avalynx-simpleadmin-sidenav-heading">Administration</li>
+                    <li class="avalynx-simpleadmin-sidenav-item">
+                        <h2 class="avalynx-simpleadmin-sidenav-header">
+                            <a class="avalynx-simpleadmin-sidenav-link" type="button" href="#">
+                                <i class="fa-fw fa-solid fa-table"></i>
+                                <span class="title">DDM Table</span>
+                            </a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="avalynx-simpleadmin-container" class="flex-grow-1 p-4">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">DDM Dashboard</h5>
+            </div>
+            <div class="card-body">
+                <p class="lead">Welcome to the dashboard of the VIS DDM Plugins!</p>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-primary border-4 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted text-uppercase small">Total Entries</h6>
+                                        <h2 class="fw-bold mb-0">1,234</h2>
+                                    </div>
+                                    <div class="bg-primary bg-opacity-10 p-3 rounded">
+                                        <i class="fa-solid fa-database fa-2x text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-success border-4 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted text-uppercase small">Active Users</h6>
+                                        <h2 class="fw-bold mb-0">56</h2>
+                                    </div>
+                                    <div class="bg-success bg-opacity-10 p-3 rounded">
+                                        <i class="fa-solid fa-users fa-2x text-success"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-start border-warning border-4 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted text-uppercase small">Pending Tasks</h6>
+                                        <h2 class="fw-bold mb-0">12</h2>
+                                    </div>
+                                    <div class="bg-warning bg-opacity-10 p-3 rounded">
+                                        <i class="fa-solid fa-clock-rotate-left fa-2x text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

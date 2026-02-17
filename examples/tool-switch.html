@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvalynxSimpleAdmin - Tool Switch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="../src/css/avalynx-simpleadmin.vars.css" rel="stylesheet">
+    <link href="../src/css/avalynx-simpleadmin-sidenav.vars.css" rel="stylesheet">
+    <link href="../src/css/avalynx-simpleadmin-sidenav.css" rel="stylesheet">
+    <link href="../src/css/avalynx-simpleadmin.css" rel="stylesheet">
+    <style>
+        .tool-card {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+
+    <div id="avalynx-simpleadmin-loader" class="position-fixed top-0 start-0 w-100 h-100 bg-body d-flex align-items-center justify-content-center" style="z-index: 9999;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <header id="avalynx-simpleadmin-header" class="d-flex align-items-center justify-content-between border-bottom px-3 bg-body shadow-sm">
+        <div class="d-flex align-items-center h-100">
+            <button class="btn border-0 d-md-none me-2" onclick="avalynxSimpleAdminToggleSidenav();">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="#" class="avalynx-simpleadmin-brand d-flex align-items-center text-decoration-none text-body fw-bold">
+                <i class="fa-solid fa-shield-halved me-2"></i>
+                <span class="fs-5">AdminPanel</span>
+            </a>
+            <button class="btn border-0 d-none d-md-block ms-2" onclick="avalynxSimpleAdminToggleSidenav();">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-cubes me-2"></i>
+                    <span class="d-none d-sm-inline">Main Tool</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li><h6 class="dropdown-header">Switch Tool</h6></li>
+                    <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-cube me-2 fa-fw"></i> Main Tool</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-microchip me-2 fa-fw"></i> Service Tool</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-database me-2 fa-fw"></i> DB Manager</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus me-2 fa-fw"></i> Add More</a></li>
+                </ul>
+            </div>
+            <a href="#" class="avalynx-simpleadmin-toggler-darkmode fs-5 text-body text-decoration-none" onclick="avalynxSimpleAdminToggleDarkmode(); return false;"></a>
+            <div class="dropdown">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-flex" id="avalynx-simpleadmin-main">
+        <aside id="avalynx-simpleadmin-sidenav" class="d-flex flex-column flex-shrink-0 bg-body border-end shadow-sm overflow-auto" tabindex="-1">
+            <div id="avalynx-simpleadmin-sidenav-header" class="p-3 border-bottom d-flex align-items-center justify-content-between">
+                <span class="fs-5 fw-bold">Menu</span>
+                <button type="button" class="btn-close" onclick="avalynxSimpleAdminToggleSidenav();" aria-label="Close"></button>
+            </div>
+            <div id="avalynx-simpleadmin-sidenav-body" class="flex-grow-1 py-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item px-3 mb-1">
+                        <a href="dashboard.html" class="nav-link d-flex align-items-center text-body">
+                            <i class="fa-solid fa-gauge-high me-2 fa-fw"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item px-3 mb-1">
+                        <a href="tool-switch.html" class="nav-link active d-flex align-items-center" aria-current="page">
+                            <i class="fa-solid fa-screwdriver-wrench me-2 fa-fw"></i>
+                            Tool Wechsel
+                        </a>
+                    </li>
+                    <li class="nav-item px-3 mb-1">
+                        <a href="#" class="nav-link d-flex align-items-center text-body">
+                            <i class="fa-solid fa-users me-2 fa-fw"></i>
+                            Users
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main id="avalynx-simpleadmin-container" class="flex-grow-1 overflow-auto p-4">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Tool Wechsel</h1>
+                </div>
+
+                <p class="lead">Wählen Sie ein Werkzeug aus, um fortzufahren:</p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm tool-card">
+                            <div class="card-body text-center py-5">
+                                <i class="fa-solid fa-user-gear fa-4x mb-3 text-primary"></i>
+                                <h5 class="card-title">Benutzerverwaltung</h5>
+                                <p class="card-text text-muted">Verwalten Sie Benutzer, Rollen und Berechtigungen.</p>
+                                <button class="btn btn-primary mt-3">Tool öffnen</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm tool-card border-primary">
+                            <div class="card-body text-center py-5 position-relative">
+                                <span class="position-absolute top-0 end-0 m-3 badge rounded-pill bg-success">Aktiv</span>
+                                <i class="fa-solid fa-box-open fa-4x mb-3 text-primary"></i>
+                                <h5 class="card-title">Inventar</h5>
+                                <p class="card-text text-muted">Überwachen und verwalten Sie Ihren Lagerbestand.</p>
+                                <button class="btn btn-outline-primary mt-3">Aktuell aktiv</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm tool-card">
+                            <div class="card-body text-center py-5">
+                                <i class="fa-solid fa-envelope-open-text fa-4x mb-3 text-primary"></i>
+                                <h5 class="card-title">Marketing</h5>
+                                <p class="card-text text-muted">Erstellen und versenden Sie Newsletter-Kampagnen.</p>
+                                <button class="btn btn-primary mt-3">Tool öffnen</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm tool-card">
+                            <div class="card-body text-center py-5">
+                                <i class="fa-solid fa-chart-pie fa-4x mb-3 text-primary"></i>
+                                <h5 class="card-title">Analysen</h5>
+                                <p class="card-text text-muted">Detaillierte Berichte über Ihre Geschäftsleistung.</p>
+                                <button class="btn btn-primary mt-3">Tool öffnen</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm tool-card">
+                            <div class="card-body text-center py-5">
+                                <i class="fa-solid fa-gears fa-4x mb-3 text-primary"></i>
+                                <h5 class="card-title">Systemeinstellungen</h5>
+                                <p class="card-text text-muted">Konfigurieren Sie globale Anwendungsparameter.</p>
+                                <button class="btn btn-primary mt-3">Tool öffnen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/avalynx-simpleadmin.js"></script>
+</body>
+</html>
