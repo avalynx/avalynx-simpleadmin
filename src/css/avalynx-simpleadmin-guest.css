@@ -8,6 +8,10 @@
     height: var(--avalynx-simpleadmin-navbar-height);
 }
 
+#avalynx-simpleadmin-main {
+    background-color: var(--avalynx-simpleadmin-content-bg);
+}
+
 #avalynx-simpleadmin-loader {
     margin: -1.5rem !important;
     z-index: 999;

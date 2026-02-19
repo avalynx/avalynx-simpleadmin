@@ -9,7 +9,12 @@
     height: var(--avalynx-simpleadmin-navbar-height);
 }
 
+#avalynx-simpleadmin-main {
+    background-color: var(--avalynx-simpleadmin-content-bg);
+}
+
 #avalynx-simpleadmin-loader {
+    margin: -1.5rem !important;
     z-index: 999;
 }
 
@@ -17,6 +22,7 @@
 #avalynx-simpleadmin-loader {
     height: calc(100vh - var(--avalynx-simpleadmin-navbar-height));
 }
+
 
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_desktop,
 #avalynx-simpleadmin-sidenav.jsbvis_sidenav_mobile {
